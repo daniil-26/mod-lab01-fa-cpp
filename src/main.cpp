@@ -1,5 +1,7 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
+#include <iostream>
+#include <cmath>
 
 int main() {
     const char * str = " Hello world     1000";
