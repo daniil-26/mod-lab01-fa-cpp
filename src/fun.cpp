@@ -2,7 +2,7 @@
 #include "fun.h"
 #include <iostream>
 #include <cmath>
-#include <ctype.h>
+#include <ctype>
 
 unsigned int faStr1(const char *str) {
     unsigned int count = 0;
@@ -15,8 +15,7 @@ unsigned int faStr1(const char *str) {
             }
             if (word && correct && isdigit(str[i]))
                 correct = false;
-        }
-        else if (word) {
+        } else if (word) {
             word = false;
             if (correct)
                 count++;
@@ -39,7 +38,9 @@ unsigned int faStr2(const char *str) {
                     first = true;
                 }
             }
-            else first = false;
+            else {
+                first = false;
+            }
             if (word && correct && !first && !('a' <= str[i] && str[i] <= 'z'))
                 correct = false;
         }
