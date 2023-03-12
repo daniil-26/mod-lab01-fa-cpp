@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cmath>
 
-int main() {
+int main () {
     const char * str = " Hello world     1000";
     faStr3(str);
     cout << "string: " << str << "\n"
