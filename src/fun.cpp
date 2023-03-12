@@ -37,14 +37,12 @@ unsigned int faStr2(const char *str) {
                     correct = true;
                     first = true;
                 }
-            }
-            else {
+            } else {
                 first = false;
             }
             if (word && correct && !first && !('a' <= str[i] && str[i] <= 'z'))
                 correct = false;
-        }
-        else if (word) {
+        } else if (word) {
             word = false;
             if (correct) {
                 count++;
@@ -63,8 +61,7 @@ unsigned int faStr3(const char *str) {
         if (str[i] != ' ') {
             word = true;
             length++;
-        }
-        else if (word) {
+        } else if (word) {
             word = false;
             sum += length;
             length = 0;
