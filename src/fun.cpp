@@ -2,7 +2,7 @@
 #include "fun.h"
 #include <iostream>
 #include <cmath>
-#include <ctype>
+#include <ctype.h>
 
 unsigned int faStr1 (const char *str) {
     unsigned int count = 0;
@@ -55,7 +55,6 @@ unsigned int faStr2 (const char *str) {
         count++;
     return count;
 }
-
 unsigned int faStr3 (const char *str) {
     unsigned int count = 0, length = 0, sum = 0;
     bool word = false;
