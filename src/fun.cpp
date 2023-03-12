@@ -2,7 +2,7 @@
 #include "fun.h"
 #include <iostream>
 #include <cmath>
-#include <ctype>
+#include <ctype.h>
 
 unsigned int faStr1(const char *str) {
     unsigned int count = 0;
@@ -72,5 +72,5 @@ unsigned int faStr3(const char *str) {
         sum += length;
         count++;
     }
-    return round((float)sum / count);
+    return round(<float> sum / count);
 }
