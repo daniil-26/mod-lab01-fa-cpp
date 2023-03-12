@@ -2,7 +2,6 @@
 #include "fun.h"
 #include <iostream>
 #include <cmath>
-#include <ctype.h>
 
 unsigned int faStr1(const char *str) {
     unsigned int count = 0;
